@@ -359,19 +359,19 @@ _(SI si todas las líneas están cubiertas, NO si hay alguna con #####)_
 
 **P13** — En este laboratorio encontraste los bugs escribiendo tests. ¿Qué tiene de mejor este enfoque frente a mirar el código directamente?
 
-> R: Permite
+> R: Los tests buscan deliberadamente evaluar casos en los que debería funcionar (o fallar) una función. Están premeditados, fuerzan a pensar dónde debe funcionar y fallar el código, y de esta forma es menos propenso a generar bugs y se tiene una idea más clara de qué hace cada función. Con solo mirar un código, no sabemos a priori si todas las funciones están correctamente hechas, puede parecer a simple vista que lo estén, pero se pierde rigurosidad y es más difícil encontrar bugs.
 
 **P14** — El test `test_total_precio_unitario` (cantidad = 1) **pasó** a pesar del bug, mientras que `test_total_con_cantidad` (cantidad = 2) **falló**. ¿Por qué el primer test no detectó el bug?
 
-> R:
+> R: Porque al ser una única cantidad, el bug no es visible. Cuando hay que tener en cuenta cantidades > 1 es donde se hace claramente visible que no se está multiplicando el precio unitario por la cantidad. Si la cantidad es 1, el precio total es justamente el precio unitario.
 
 ```
-BUG_EN_FUNCION_1=
+BUG_EN_FUNCION_1=carrito_total
 ```
 _(nombre de la función con el primer bug)_
 
 ```
-BUG_EN_FUNCION_2=
+BUG_EN_FUNCION_2=carrito_agregar
 ```
 _(nombre de la función con el segundo bug)_
 
