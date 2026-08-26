@@ -81,7 +81,7 @@ Vas a ver el carrito con tres productos y su total.
 > R: No coincide, muestra $2050
 
 ```
-TOTAL_PROGRAMA= 2050
+TOTAL_PROGRAMA=2050
 ```
 _(escribí el número que imprimió el programa)_
 
@@ -169,7 +169,7 @@ make test_unitarios
 > R: Si, porque aparece como [OK]
 
 ```
-TEST_PRECIO_UNITARIO_PASA= SI
+TEST_PRECIO_UNITARIO_PASA=SI
 ```
 _(SI o NO)_
 
@@ -198,7 +198,7 @@ Descomentá `/* test_total_con_cantidad(); */` en el `main()`, compilá y corré
 > R: Falla. Esperaba 700 y obtuvo 350, no hizo correctamente el cálculo del total
 
 ```
-TEST_TOTAL_CANTIDAD_PASA= NO
+TEST_TOTAL_CANTIDAD_PASA=NO
 ```
 _(SI o NO)_
 
@@ -232,7 +232,7 @@ cat salidas/test_unitarios.txt
 ```
 
 ```
-TESTS_UNITARIOS_PASAN= SI
+TESTS_UNITARIOS_PASAN=SI
 ```
 _(escribí SI si todos los tests pasan ahora)_
 
@@ -265,7 +265,7 @@ Si el test falló, encontraste el segundo bug. Buscá en `src/carrito.c` la cond
 Corregí el bug, volvé a compilar y verificá que todos los tests pasan.
 
 ```
-BUG_2_CORREGIDO= SI
+BUG_2_CORREGIDO=SI
 ```
 _(SI o NO)_
 
@@ -301,7 +301,7 @@ cat salidas/test_integracion.txt
 ```
 
 ```
-TEST_INTEGRACION_PASA= SI
+TEST_INTEGRACION_PASA=SI
 ```
 _(SI o NO)_
 
@@ -319,7 +319,7 @@ Escribí `test_agregar_hasta_llenar()` en el lugar `/* PARTE E */`. Este test de
 Descomentá `/* test_agregar_hasta_llenar(); */` en el `main()`, compilá y corré.
 
 ```
-TEST_LLENAR_PASA= SI
+TEST_LLENAR_PASA=SI
 ```
 _(SI o NO)_
 
@@ -341,7 +341,7 @@ Las líneas con `#####` nunca se ejecutaron — no están cubiertas por los test
 > R: Sí, la línea 29 y 30. No se ejecutó calcular_descuento porque cobertura solamente mira qué se ejecutó en los tests unitarios, y calcular_descuento se usa en los de integración, no los unitarios.
 
 ```
-COBERTURA_COMPLETA= NO
+COBERTURA_COMPLETA=NO
 ```
 _(SI si todas las líneas están cubiertas, NO si hay alguna con #####)_
 
