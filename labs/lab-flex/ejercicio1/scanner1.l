@@ -26,7 +26,7 @@
  /* TODO 3 — Identificador (ej: miVariable, _count, hola_mundo)
    Pista: empieza con letra o _, seguido de letras, dígitos o _
    Acción esperada: printf("identificador: %s\n", yytext);               */
-[_a-zA-Z]+[_a-zA-Z0-9]* { printf("idenficador: %s\n", yytext); }
+[_a-zA-Z]+[_a-zA-Z0-9]* { printf("identificador: %s\n", yytext); }
 
  /* TODO 4 — Comodín: cualquier carácter no reconocido por las reglas anteriores
    Pista: el patrón . coincide con cualquier carácter
