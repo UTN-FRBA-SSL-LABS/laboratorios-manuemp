@@ -9,6 +9,7 @@
 enum yytokentype {
     NUMBER = 258,
     /* TODO 1 — Agregar IDENT = 259 en el enum */
+    IDENT = 259
 };
 
 int yylval;
@@ -37,6 +38,10 @@ identificador   {letra}({letra}|{digito})*
    Y retornar IDENT.                                                        */
 
 [ \t\n]  { }
+{identificador}+ { 
+    printf("TOKEN IDENT (%d) lexema=%s\n", IDENT, yytext);
+    return IDENT;
+ }
 
 .  { printf("caracter no reconocido: %s\n", yytext); }
 
